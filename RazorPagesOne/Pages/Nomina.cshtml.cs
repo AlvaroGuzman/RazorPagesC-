@@ -60,7 +60,10 @@ namespace RazorPagesOne.Pages
 
 
 
-
+        public double TotalDescuento()
+        {
+            return totalDescuento = calularISR() + calularSFS() + calularAFP();
+        }
 
 
 

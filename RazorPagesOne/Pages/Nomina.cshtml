@@ -41,19 +41,20 @@
 
         @foreach (var nom in nomina)
         {
-            <tr class="cursol-pointer">
-                <td>@nom.nombre</td>
-                <td>@nom.apellido</td>
-                <td>@nom.cargo</td>
-                <td>@nom.sueldo</td>
-                <td>@Math.Round(nom.calularAFP())</td>
-                <td>@Math.Round(nom.calularSFS())</td>
-                <td>@Math.Round(nom.calularISR())</td>
-                <td>@Math.Round(nom.calcularSueldoNeto())</td>
+        <tr class="cursol-pointer">
+            <td>@nom.nombre</td>
+            <td>@nom.apellido</td>
+            <td>@nom.cargo</td>
+            <td>@nom.sueldo</td>
+            <td>@Math.Round(nom.calularAFP())</td>
+            <td>@Math.Round(nom.calularSFS())</td>
+            <td>@Math.Round(nom.calularISR())</td>
+            <td>@Math.Round(nom.TotalDescuento())</td>
+            <td>@Math.Round(nom.calcularSueldoNeto())</td>
 
 
 
-            </tr>
+        </tr>
         }
 
 
