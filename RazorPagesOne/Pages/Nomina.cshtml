@@ -2,16 +2,22 @@
 @model RazorPagesOne.Pages.NominaModel
 @{
 
-    List<NominaModel> nomina = new List<NominaModel>();
+    List<NominaModel> nomina = new List<NominaModel>()
+    {
 
-    nomina.Add(new NominaModel() { nombre = "Alvaro", apellido = "Guzman", cargo = "DBA", sueldo = 47000.00 });
+            new NominaModel() { nombre = "Alvaro", apellido = "Guzman", cargo = "DBA", sueldo = 47000.00 },
 
-    nomina.Add(new NominaModel() { nombre = "Ignacio", apellido = "Cuevas", cargo = "Administrador de Serividores", sueldo = 50000.00 });
+            new NominaModel() { nombre = "Ignacio", apellido = "Cuevas", cargo = "Administrador de Serividores", sueldo = 50000.00 },
 
-    nomina.Add(new NominaModel() { nombre = "Pedro", apellido = "Reyes", cargo = "Coordinador de Serividores", sueldo = 55000.00 });
-    nomina.Add(new NominaModel() { nombre = "Hancel", apellido = "Hernandez", cargo = "Coordinador de Seguridad", sueldo = 55000.00 });
-    nomina.Add(new NominaModel() { nombre = "Dioris", apellido = "Lanfranco", cargo = "Soporte de Redes", sueldo = 40000.00 });
-    nomina.Add(new NominaModel() { nombre = "Banyelin", apellido = "Rodriguez", cargo = "Secretaria", sueldo = 40000.00 });
+            new NominaModel() { nombre = "Pedro", apellido = "Reyes", cargo = "Coordinador de Serividores", sueldo = 55000.00 },
+            new NominaModel() { nombre = "Hancel", apellido = "Hernandez", cargo = "Coordinador de Seguridad", sueldo = 55000.00 },
+            new NominaModel() { nombre = "Dioris", apellido = "Lanfranco", cargo = "Soporte de Redes", sueldo = 40000.00 },
+            new NominaModel() { nombre = "Banyelin", apellido = "Rodriguez", cargo = "Secretaria", sueldo = 40000.00 },
+
+
+
+};
+
 
 
 
@@ -19,7 +25,7 @@
 
 <h1> Nomina pago fijo </h1>
 
-<table class="table">
+<table class="table table-hover">
     <thead class="thead-dark table-hover">
 
         <tr>

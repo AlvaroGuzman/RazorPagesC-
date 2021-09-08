@@ -1,0 +1,62 @@
+﻿@page
+@model RazorPagesOne.Pages.AmortizacionFrancesModel
+@{
+
+
+
+}
+
+<h1> Calculo de la Amortizacion, Metodo Frances</h1>
+
+
+<form method="get">
+
+
+    <label>Digite el monto</label>
+    <input type="text" class="form-control" name="Monto" />
+    <label>Digite la cantidad</label>
+    <input type="text" class="form-control" name="Cantidad" />
+    <label>Digite el porciento</label>
+    <input type="text" class="form-control" name="Porcentaje" />
+    <button type="submit" class="btn btn-success">Enviar</button>
+
+
+
+
+
+
+</form>
+<br />
+<h1>---------------------------------------------------------------------</h1>
+<br />
+
+<table class="table table-hover">
+    <thead class="thead-dark table-hover">
+
+        <tr>
+            <th>Monto</th>
+            <th>Cantidad</th>
+            <th>Porcentaje</th>
+         
+        </tr>
+    </thead>
+
+    <tbody>
+
+
+
+        @foreach (var amortizacion in Model.amortizacion)
+        {
+            <tr class="cursol-pointer">
+                <td>@amortizacion.monto</td>
+                <td>@amortizacion.cantidad</td>
+                <td>@amortizacion.porcentaje</td>
+            </tr>
+        }
+
+
+
+    </tbody>
+
+</table>
+
